@@ -10,7 +10,7 @@ lung_dataset <- survival::lung |>
   ) |>
   # recode the status column to 0 (censored) and 1 (event)
   dplyr::mutate(
-    staus = dplyr::recode(status, `1` = 0, `2` = 1)
+    status = dplyr::recode(status, `1` = 0, `2` = 1)
   )
 
 # Fit the survival object
