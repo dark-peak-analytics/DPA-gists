@@ -14,7 +14,7 @@ lung_dataset <- survival::lung |>
   )
 
 # Fit the survival object
-fit <- survival::survfit(formula = survival::Surv(time = time, event = staus) ~ 1,
+fit <- survival::survfit(formula = survival::Surv(time = time, event = status) ~ 1,
                          data = lung_dataset)
 
 # create simple KM plot and risk table
